@@ -11,10 +11,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.takagimeow.adaptiveuisample.core.navigation.NavigationDestination
 import com.takagimeow.adaptiveuisample.feature.home.navigation.homeGraph
+import com.takagimeow.adaptiveuisample.feature.settings.navigation.settingsGraph
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
-fun NavGraph(
+fun AdaptiveUISampleNavGraph(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
     onNavigateToDestination: (NavigationDestination, String, from: NavBackStackEntry?) -> Unit,
@@ -29,6 +30,9 @@ fun NavGraph(
         startDestination = startDestination
     ) {
         homeGraph {
+
+        }
+        settingsGraph {
 
         }
     }
