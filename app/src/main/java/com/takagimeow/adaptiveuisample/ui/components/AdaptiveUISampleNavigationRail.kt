@@ -63,29 +63,5 @@ fun AdaptiveUISampleNavigationRail(
                 },
             )
         }
-        NavigationRailItem(
-            selected = selectedDestination == HomeDestination.destination,
-            onClick = {
-              navigateToRoute(HomeDestination)
-            },
-            icon = {
-                Icon(
-                    imageVector = Icons.Default.Home,
-                    contentDescription = ""
-                )
-            }
-        )
-        NavigationRailItem(
-            selected = selectedDestination == SettingsDestination.destination,
-            onClick = {
-                navigateToRoute(SettingsDestination)
-            },
-            icon = {
-                Icon(
-                    imageVector = Icons.Default.Settings,
-                    contentDescription = ""
-                )
-            }
-        )
     }
 }
